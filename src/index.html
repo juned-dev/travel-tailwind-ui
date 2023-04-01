@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+
+  <body>
+    <header class="bg-white shadow">
+      <div class="container">
+        <div class="flex h-16 justify-between">
+          <div class="flex">
+            <div class="flex flex-shrink-0 items-center">
+              <img
+                class="block h-8 w-auto lg:hidden"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt="Your Company"
+              />
+              <img
+                class="hidden h-8 w-auto lg:block"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt="Your Company"
+              />
+            </div>
+            <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+              <a
+                href="#"
+                class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                >Dashboard</a
+              >
+              <a
+                href="#"
+                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                >Team</a
+              >
+              <a
+                href="#"
+                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                >Projects</a
+              >
+              <a
+                href="#"
+                class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                >Calendar</a
+              >
+            </div>
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:items-center">
+            <button
+              type="button"
+              class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            >
+              <span class="sr-only">View notifications</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button
+                  type="button"
+                  class="flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  id="user-menu-button"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                >
+                  <span class="sr-only">Open user menu</span>
+                  <img
+                    class="h-8 w-8 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="-mr-2 flex items-center sm:hidden">
+            <!-- Mobile menu button -->
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <!--
+                Icon when menu is closed.
+    
+                Menu open: "hidden", Menu closed: "block"
+              -->
+              <svg
+                class="block h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <!--
+                Icon when menu is open.
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg
+                class="hidden h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- home hero section -->
+    <section
+      class="flex items-center bg-blend-multiply bg-[#374151] py-4 bg-hp-hero-img bg-cover bg-center min-h-[800px] sm:min-h-[700px] h-[calc(100vh-64px)]"
+    >
+      <div class="container">
+        <div class="max-w-lg mx-auto text-center mb-10 sm:mb-20">
+          <p
+            class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-white font-bold mb-6"
+          >
+            Every home is a destination
+          </p>
+          <p class="text-lg text-white/70">
+            The best of Luxury Retreats is now Flowbite Luxe—offering the
+            world's most extraordinary homes with the highest standard of
+            service. Sign In / Register
+          </p>
+        </div>
+        <div class="bg-white rounded-xl shadow-xl p-6">
+          <form class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 items-center">
+            <div>
+              <label for="email" class="sr-only"></label>
+              <p class="font-semibold">Where to look?</p>
+              <input
+                type="text"
+                class="block w-full py-1.5 outline-none border-t-0 border-l-0 border-r-0 border-b border-b-gray-300 text-gray-900 placeholder:text-gray-400 focus:placeholder:text-gray-600 sm:text-sm sm:leading-6 focus:border-b-indigo-600 focus:ring-0"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div>
+              <div>
+                <label for="email" class="sr-only"></label>
+                <p class="font-semibold">All categories</p>
+
+                <div>
+                  <label
+                    for="location"
+                    class="block text-sm font-medium leading-6 text-gray-900"
+                  ></label>
+                  <select
+                    id="location"
+                    name="location"
+                    class="block w-full py-1.5 outline-none border-t-0 border-l-0 border-r-0 border-b border-b-gray-300 text-gray-900 placeholder:text-gray-400 focus:placeholder:text-gray-600 sm:text-sm sm:leading-6 focus:border-b-indigo-600 focus:ring-0"
+                  >
+                    <option selected>Select types of test</option>
+                    <option>United States</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label for="email" class="sr-only"></label>
+              <p class="font-semibold">What are you looking for?</p>
+              <input
+                type="text"
+                class="block w-full py-1.5 outline-none border-t-0 border-l-0 border-r-0 border-b border-b-gray-300 text-gray-900 placeholder:text-gray-400 focus:placeholder:text-gray-600 sm:text-sm sm:leading-6 focus:border-b-indigo-600 focus:ring-0"
+                placeholder="Enter your city"
+              />
+            </div>
+            <div>
+              <button
+                type="button"
+                class="inline-flex items-center justify-center gap-x-2 w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="-ml-0.5 h-5 w-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container pt-4">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <h3
+              class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Everything you need to deploy your app
+            </h3>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+              Suspendisse eget egestas a elementum pulvinar et feugiat blandit
+              at. In mi viverra elit nunc.
+            </p>
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl
+              class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+            >
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div
+                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                  >
+                    <svg
+                      class="h-6 w-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+                      />
+                    </svg>
+                  </div>
+                  Push to deploy
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing
+                  suspendisse semper morbi. Odio urna massa nunc massa.
+                </dd>
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div
+                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                  >
+                    <svg
+                      class="h-6 w-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                      />
+                    </svg>
+                  </div>
+                  SSL certificates
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  Sit quis amet rutrum tellus ullamcorper ultricies libero dolor
+                  eget. Sem sodales gravida quam turpis enim lacus amet.
+                </dd>
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div
+                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                  >
+                    <svg
+                      class="h-6 w-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+                      />
+                    </svg>
+                  </div>
+                  Simple queues
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  Quisque est vel vulputate cursus. Risus proin diam nunc
+                  commodo. Lobortis auctor congue commodo diam neque.
+                </dd>
+              </div>
+
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div
+                    class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                  >
+                    <svg
+                      class="h-6 w-6 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"
+                      />
+                    </svg>
+                  </div>
+                  Advanced security
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt
+                  mattis aliquet hac quis. Id hac maecenas ac donec pharetra
+                  eget.
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- featured on section -->
+    <section>
+      <div class="container">
+        <div class="mx-auto max-w-2xl lg:text-center">
+          <h2
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Featured On
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
+            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
+            In mi viverra elit nunc.
+          </p>
+        </div>
+        <div class="mx-auto max-w-7xl mt-16 sm:mt-20 lg:mt-24">
+          <div
+            class="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3"
+          >
+            <div class="bg-gray-400/5 p-8 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+                alt="Transistor"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="bg-gray-400/5 p-6 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+                alt="Reform"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="bg-gray-400/5 p-6 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+                alt="Tuple"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="bg-gray-400/5 p-6 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/laravel-logo-gray-900.svg"
+                alt="Laravel"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="bg-gray-400/5 p-6 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+                alt="SavvyCal"
+                width="158"
+                height="48"
+              />
+            </div>
+            <div class="bg-gray-400/5 p-6 sm:p-10">
+              <img
+                class="max-h-12 w-full object-contain"
+                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+                alt="Statamic"
+                width="158"
+                height="48"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ section -->
+    <section>
+      <div class="container">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
+            <h2
+              class="text-2xl font-bold leading-10 tracking-tight text-gray-900"
+            >
+              Frequently asked questions
+            </h2>
+            <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+              <div x-data="{ open: true }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-0"
+                    @click="open = !open"
+                    aria-expanded="true"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >What's the best thing about Switzerland?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6 hidden"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd class="mt-2 pr-12" id="faq-0" x-show="open">
+                  <p class="text-base leading-7 text-gray-600">
+                    I don't know, but the flag is a big plus. Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Quas cupiditate
+                    laboriosam fugiat.
+                  </p>
+                </dd>
+              </div>
+
+              <div x-data="{ open: false }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-1"
+                    @click="open = !open"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >How do you make holy water?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="hidden h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd
+                  class="mt-2 pr-12"
+                  id="faq-1"
+                  x-show="open"
+                  style="display: none"
+                >
+                  <p class="text-base leading-7 text-gray-600">
+                    You boil the hell out of it. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Magnam aut tempora vitae odio
+                    inventore fuga aliquam nostrum quod porro. Delectus quia
+                    facere id sequi expedita natus.
+                  </p>
+                </dd>
+              </div>
+
+              <div x-data="{ open: false }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-2"
+                    @click="open = !open"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >What do you call someone with no body and no nose?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="hidden h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd
+                  class="mt-2 pr-12"
+                  id="faq-2"
+                  x-show="open"
+                  style="display: none"
+                >
+                  <p class="text-base leading-7 text-gray-600">
+                    Nobody knows. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Culpa, voluptas ipsa quia excepturi,
+                    quibusdam natus exercitationem sapiente tempore labore
+                    voluptatem.
+                  </p>
+                </dd>
+              </div>
+
+              <div x-data="{ open: false }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-3"
+                    @click="open = !open"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >Why do you never see elephants hiding in trees?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="hidden h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd
+                  class="mt-2 pr-12"
+                  id="faq-3"
+                  x-show="open"
+                  style="display: none"
+                >
+                  <p class="text-base leading-7 text-gray-600">
+                    Because they're so good at it. Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Quas cupiditate laboriosam
+                    fugiat.
+                  </p>
+                </dd>
+              </div>
+
+              <div x-data="{ open: false }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-4"
+                    @click="open = !open"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >Why can't you hear a pterodactyl go to the
+                      bathroom?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="hidden h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd
+                  class="mt-2 pr-12"
+                  id="faq-4"
+                  x-show="open"
+                  style="display: none"
+                >
+                  <p class="text-base leading-7 text-gray-600">
+                    Because the pee is silent. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Ipsam, quas voluptatibus ex
+                    culpa ipsum, aspernatur blanditiis fugiat ullam magnam
+                    suscipit deserunt illum natus facilis atque vero
+                    consequatur! Quisquam, debitis error.
+                  </p>
+                </dd>
+              </div>
+
+              <div x-data="{ open: false }" class="pt-6">
+                <dt>
+                  <button
+                    type="button"
+                    x-description="Expand/collapse question button"
+                    class="flex w-full items-start justify-between text-left text-gray-900"
+                    aria-controls="faq-5"
+                    @click="open = !open"
+                    aria-expanded="false"
+                    x-bind:aria-expanded="open.toString()"
+                  >
+                    <span class="text-base font-semibold leading-7"
+                      >Why did the invisible man turn down the job offer?</span
+                    >
+                    <span class="ml-6 flex h-7 items-center">
+                      <svg
+                        x-description="Icon when question is collapsed."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="h-6 w-6"
+                        :class="{ 'hidden': open }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 6v12m6-6H6"
+                        ></path>
+                      </svg>
+                      <svg
+                        x-description="Icon when question is expanded."
+                        x-state:on="Item expanded"
+                        x-state:off="Item collapsed"
+                        class="hidden h-6 w-6"
+                        :class="{ 'hidden': !(open) }"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M18 12H6"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </dt>
+                <dd
+                  class="mt-2 pr-12"
+                  id="faq-5"
+                  x-show="open"
+                  style="display: none"
+                >
+                  <p class="text-base leading-7 text-gray-600">
+                    He couldn't see himself doing it. Lorem ipsum dolor sit,
+                    amet consectetur adipisicing elit. Eveniet perspiciatis
+                    officiis corrupti tenetur. Temporibus ut voluptatibus,
+                    perferendis sed unde rerum deserunt eius.
+                  </p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog section -->
+    <section>
+      <div class="container">
+        <div class="mx-auto max-w-7xl">
+          <div class="mx-auto max-w-2xl text-center">
+            <h2
+              class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            >
+              From the blog
+            </h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">
+              Learn how to grow your business with our expert advice.
+            </p>
+          </div>
+          <div
+            class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          >
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3603&amp;q=80"
+                alt=""
+                class="absolute inset-0 -z-10 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"
+              ></div>
+              <div
+                class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+              ></div>
+
+              <div
+                class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"
+              >
+                <time datetime="2020-03-16" class="mr-8">Mar 16, 2020</time>
+                <div class="-ml-4 flex items-center gap-x-4">
+                  <svg
+                    viewBox="0 0 2 2"
+                    class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
+                  >
+                    <circle cx="1" cy="1" r="1"></circle>
+                  </svg>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                      alt=""
+                      class="h-6 w-6 flex-none rounded-full bg-white/10"
+                    />
+                    Michael Foster
+                  </div>
+                </div>
+              </div>
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Boost your conversion rate
+                </a>
+              </h3>
+            </article>
+
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80"
+                alt=""
+                class="absolute inset-0 -z-10 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"
+              ></div>
+              <div
+                class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+              ></div>
+
+              <div
+                class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"
+              >
+                <time datetime="2020-03-10" class="mr-8">Mar 10, 2020</time>
+                <div class="-ml-4 flex items-center gap-x-4">
+                  <svg
+                    viewBox="0 0 2 2"
+                    class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
+                  >
+                    <circle cx="1" cy="1" r="1"></circle>
+                  </svg>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                      alt=""
+                      class="h-6 w-6 flex-none rounded-full bg-white/10"
+                    />
+                    Lindsay Walton
+                  </div>
+                </div>
+              </div>
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  How to use search engine optimization to drive sales
+                </a>
+              </h3>
+            </article>
+
+            <article
+              class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=3270&amp;q=80"
+                alt=""
+                class="absolute inset-0 -z-10 h-full w-full object-cover"
+              />
+              <div
+                class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"
+              ></div>
+              <div
+                class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10"
+              ></div>
+
+              <div
+                class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300"
+              >
+                <time datetime="2020-02-12" class="mr-8">Feb 12, 2020</time>
+                <div class="-ml-4 flex items-center gap-x-4">
+                  <svg
+                    viewBox="0 0 2 2"
+                    class="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50"
+                  >
+                    <circle cx="1" cy="1" r="1"></circle>
+                  </svg>
+                  <div class="flex gap-x-2.5">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                      alt=""
+                      class="h-6 w-6 flex-none rounded-full bg-white/10"
+                    />
+                    Tom Cook
+                  </div>
+                </div>
+              </div>
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-white">
+                <a href="#">
+                  <span class="absolute inset-0"></span>
+                  Improve your customer experience
+                </a>
+              </h3>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pb-0" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="mx-auto max-w-7xl px-4 pb-8">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+          <div class="space-y-8">
+            <img
+              class="h-7"
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              alt="Company name"
+            />
+            <p class="text-sm leading-6 text-gray-600">
+              Making the world a better place through constructing elegant
+              hierarchies.
+            </p>
+            <div class="flex space-x-6">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">YouTube</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold leading-6 text-gray-900">
+                  Solutions
+                </h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Marketing</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Analytics</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Commerce</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Insights</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3 class="text-sm font-semibold leading-6 text-gray-900">
+                  Support
+                </h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Pricing</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Documentation</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Guides</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >API Status</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-2 md:gap-8">
+              <div>
+                <h3 class="text-sm font-semibold leading-6 text-gray-900">
+                  Company
+                </h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >About</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Blog</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Jobs</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Press</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Partners</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-10 md:mt-0">
+                <h3 class="text-sm font-semibold leading-6 text-gray-900">
+                  Legal
+                </h3>
+                <ul role="list" class="mt-6 space-y-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Claim</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Privacy</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                      >Terms</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+          <p class="text-xs leading-5 text-gray-500">
+            &copy; 2020 Your Company, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
