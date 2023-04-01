@@ -15,8 +15,8 @@ module.exports = {
       },
 
       backgroundImage: {
-        "hero-img": "url('../images/hero-image.svg')",
-        "hp-hero-img": "url('../images/hp-coast-house-view.jpg')",
+        "hero-img": "url('./images/hero-image.svg')",
+        "hp-hero-img": "url('./images/hp-coast-house-view.jpg')",
       },
     },
   },
